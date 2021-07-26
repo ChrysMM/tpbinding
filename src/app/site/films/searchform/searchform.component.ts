@@ -53,6 +53,7 @@ export class SearchformComponent implements OnInit {
     that.results=data;
     }
     }
+    console.log(title);
     if(title)
     this.searchMovie.search(action,title,year);
     else
