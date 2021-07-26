@@ -1,19 +1,18 @@
 import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HomeComponent } from './home.component';
+import { FilmsComponent } from './films.component';
 
 const routes: Routes = [
-  {   path:'',component:HomeComponent
+  { path:'films',component:FilmsComponent
   }
-];
-
+  ];
 
 @NgModule({
-  declarations: [HomeComponent],
+  declarations: [FilmsComponent],
   imports: [
     CommonModule,
     RouterModule.forChild(routes)
   ]
 })
-export class HomeModule { }
+export class FilmsModule { }

@@ -1,3 +1,6 @@
+import { AboutModule } from './site/about/about.module';
+import { HomeModule } from './site/home/home.module';
+import { FilmsModule } from './site/films/films.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -10,7 +13,11 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FilmsModule,
+    HomeModule,
+    AppRoutingModule,
+    AboutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
