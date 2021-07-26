@@ -1,3 +1,4 @@
+import { SharedModule } from './site/shared/shared.module';
 import { AboutModule } from './site/about/about.module';
 import { HomeModule } from './site/home/home.module';
 import { FilmsModule } from './site/films/films.module';
@@ -17,7 +18,8 @@ import { AppComponent } from './app.component';
     FilmsModule,
     HomeModule,
     AppRoutingModule,
-    AboutModule
+    AboutModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
